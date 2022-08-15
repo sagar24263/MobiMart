@@ -1,5 +1,8 @@
 # MobiMart
 
+![Screenshot](https://user-images.githubusercontent.com/55542521/184697431-bbc80919-3e4c-4600-9121-f838715f32f9.png)
+
+
 ### Company Name - TickTech IT Solutions
 ### Team Id - WD1450
 ### Domain - Web Development
