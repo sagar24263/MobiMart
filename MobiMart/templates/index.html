@@ -1,0 +1,218 @@
+                                               
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="title">
+    <div class="row">
+        <div class="col-lg-6" align="center">
+            <img src="https://images.samsung.com/is/image/samsung/assets/in/p6_gro2/p6_gro2/p6_initial_mobile/All_PCD_Smartphones_720X752_Top_module_1.png?$ORIGIN_PNG$"
+                alt="Galaxy ZFold2" srcset="">
+        </div>
+        <div class="col-lg-6 heading">
+            <h1>Galaxy Z Fold2 5G</h1>
+            <h5>This is the phone that's changing the shape of the future. Discover the cutting-edge hinge
+                technology that allows it to fold like a book, stand on its own, and break the rules of what you
+                thought a smartphone should do.</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<!-- Samsung -->
+<div class="container-fluid companies1">
+    <center><img src="https://www.vesttech.com/wp-content/uploads/2019/10/samsung-logo-black-transparent-300x100.png"
+            alt="Samsung Logo"></center>
+
+
+    <div class="row" data-aos="fade-right">
+
+        {% for product in products %}
+        {% if product.compName == "Samsung" %}
+        <div class="col-lg-4" >
+            <div class="mobi-desc">
+                <h4>{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Samsung Phone" srcset="">
+            <div class="mobi-desc">
+                <h4>₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add" class="btn btn-lg btn-outline-warning update-cart">Add
+                    to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid companies2">
+    <center><img width="25%" src="https://i.pinimg.com/originals/be/cb/ca/becbca09cc81c9ecd1ce133c836b3f25.gif"
+            alt="Apple Logo"></center>
+
+
+    <div class="row" data-aos="fade-right" >
+
+        {% for product in products %}
+        {% if product.compName == "Apple" %}
+        <div class="col-lg-4" >
+            <div class="mobi-desc">
+                <h4>{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Apple Phone" srcset="">
+            <div class="mobi-desc">
+                <h4>₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid companies3">
+    <center><img width="25%" height="25%" src="https://i.pinimg.com/originals/04/cb/27/04cb27739eb8732d17e838c16b5b2287.png"
+            alt="Realme Logo"></center>
+
+
+    <div class="row" data-aos="fade-right">
+
+        {% for product in products %}
+        {% if product.compName == "Realme" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Realme Phone" srcset="">
+            <div class="mobi-desc">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+<div class="container-fluid companies4">
+    <center><img width="25%" height="25%" src="https://www.freepnglogos.com/uploads/oppo-logo-png/oppo-logo-and-symbol-meaning-history-png-3.png"
+            alt="Oppo Logo"></center>
+
+
+    <div class="row" data-aos="fade-right">
+
+        {% for product in products %}
+        {% if product.compName == "Oppo" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Oppo Phone" srcset="">
+            <div class="mobi-desc">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid companies5">
+    <center><img width="45%" height="25%" src="https://www.searchpng.com/wp-content/uploads/2019/01/vivo-Phone-logo.png"
+            alt="Vivo Logo"></center>
+
+
+    <div class="row" data-aos="fade-right">
+
+        {% for product in products %}
+        {% if product.compName == "Vivo" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img width="25%" height="60%" class="mobi" src={{product.link}} alt="Vivo Phone" srcset="">
+            <div class="mobi-desc">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid companies6">
+    <center><img width="15%" height="9%" src="https://gadgetpilipinas.net/wp-content/uploads/2017/04/Xiaomi_logo.png"
+            alt="Redmi Logo"></center>
+
+
+    <div class="row" data-aos="fade-right">
+
+        {% for product in products %}
+        {% if product.compName == "Redmi" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Redmi Phone" srcset="">
+            <div class="mobi-desc">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+{% endblock %}
